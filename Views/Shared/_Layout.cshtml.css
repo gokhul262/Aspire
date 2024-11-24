@@ -1,6 +1,5 @@
-﻿/* Please see documentation at https://learn.microsoft.com/aspnet/core/client-side/bundling-and-minification
-for details on configuring this project to bundle and minify static web assets. */
-
+﻿
+/*
 a.navbar-brand {
   white-space: normal;
   text-align: center;
@@ -45,4 +44,173 @@ button.accept-policy {
   width: 100%;
   white-space: nowrap;
   line-height: 60px;
+}
+*/
+/* General Styles */
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #f4f7fc; /* Soft light background */
+  color: #343a40; /* Dark text for better readability */
+  margin: 0;
+  padding: 0;
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+/* Navbar Styles */
+.navbar {
+  background-color: #0077cc;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Light shadow for the navbar */
+  padding: 15px;
+}
+
+.navbar-brand {
+  white-space: normal;
+  text-align: center;
+  word-break: break-all;
+  font-size: 1.8rem;
+  color: white;
+  font-weight: bold;
+}
+
+/* Link Styling */
+a {
+  color: #0077cc;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #1b6ec2; /* Darker blue on hover */
+}
+
+/* Button Styling */
+.btn-primary {
+  color: #fff;
+  background-color: #1b6ec2;
+  border-color: #1861ac;
+  padding: 10px 20px;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.btn-primary:hover {
+  background-color: #0f4a7f; /* Darker blue on hover */
+  border-color: #084a6a;
+}
+
+/* Input Fields */
+input[type="text"],
+input[type="password"],
+input[type="email"],
+textarea,
+select {
+  width: 100%;
+  padding: 12px 15px;
+  margin: 10px 0 20px;
+  border-radius: 8px;
+  border: 1px solid #ced4da;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+input[type="text"]:focus,
+input[type="password"]:focus,
+input[type="email"]:focus {
+  border-color: #1b6ec2;
+  box-shadow: 0 0 5px rgba(27, 110, 194, 0.5);
+}
+
+/* Login Form Container */
+.login-container {
+  background-color: white;
+  max-width: 400px;
+  margin: auto;
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+  margin-top: 50px; /* Space from top */
+  transition: all 0.3s ease;
+}
+
+/* Box Shadow Utility */
+.box-shadow {
+  box-shadow: 0 .25rem .75rem rgba(0, 0, 0, .05);
+}
+
+/* Header */
+h1 {
+  text-align: center;
+  font-size: 2rem;
+  color: #0077cc;
+  margin-bottom: 20px;
+}
+
+/* Footer Styles */
+.footer {
+  position: relative;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+  line-height: 60px;
+  background-color: #f1f1f1;
+  color: #777;
+  padding: 10px;
+  margin-top: 30px;
+  border-top: 1px solid #e5e5e5;
+}
+
+/* Footer Links */
+.footer a {
+  color: #0077cc;
+  text-decoration: none;
+}
+
+.footer a:hover {
+  text-decoration: underline;
+}
+
+/* Creative Background for Login Page */
+.login-page {
+  background-image: url('https://source.unsplash.com/1600x900/?office'); /* Example background image */
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+}
+
+/* Animation for the Login Form */
+@keyframes fadeIn {
+  0% {
+      opacity: 0;
+      transform: translateY(-30px);
+  }
+  100% {
+      opacity: 1;
+      transform: translateY(0);
+  }
+}
+
+/* Apply animation to the login form */
+.login-container {
+  animation: fadeIn 0.6s ease-out;
+}
+
+/* Adjustments for mobile */
+@media (max-width: 768px) {
+  .login-container {
+      width: 90%; /* Make the login form take up most of the screen on smaller devices */
+      padding: 20px;
+  }
+  
+  h1 {
+      font-size: 1.5rem;
+  }
+  
+  .navbar-brand {
+      font-size: 1.4rem;
+  }
 }

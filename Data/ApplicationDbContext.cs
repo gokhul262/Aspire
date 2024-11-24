@@ -1,5 +1,6 @@
 using Microsoft.EntityFrameworkCore;
 using EmployeeManagementSystem.Models;
+using EmployeeManagement.Models;
 
 namespace EmployeeManagementSystem.Data
 {
@@ -8,5 +9,6 @@ namespace EmployeeManagementSystem.Data
         public ApplicationDbContext(DbContextOptions<ApplicationDbContext> options) : base(options) { }
 
         public DbSet<Employee> Employees { get; set; }
+         public DbSet<User> Users { get; set; }
     }
 }

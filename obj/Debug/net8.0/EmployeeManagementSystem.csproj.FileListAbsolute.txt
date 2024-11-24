@@ -166,3 +166,5 @@ D:\Employee\EmployeeManagementSystem\obj\Debug\net8.0\refint\EmployeeManagementS
 D:\Employee\EmployeeManagementSystem\obj\Debug\net8.0\EmployeeManagementSystem.pdb
 D:\Employee\EmployeeManagementSystem\obj\Debug\net8.0\EmployeeManagementSystem.genruntimeconfig.cache
 D:\Employee\EmployeeManagementSystem\obj\Debug\net8.0\ref\EmployeeManagementSystem.dll
+D:\Employee\EmployeeManagementSystem\obj\Debug\net8.0\EmployeeManagementSystem.sourcelink.json
+D:\Employee\EmployeeManagementSystem\bin\Debug\net8.0\BCrypt.Net-Next.dll
